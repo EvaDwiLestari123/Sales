@@ -33,13 +33,13 @@ class LocationCoordinate {
 }
 
 class CustomerModel {
-  final String id;
-  final String name;
-  final num contact_number;
-  final String address;
-  final String location;
-  final LocationCoordinate location_coordinate;
-  final int company_profile;
+  final String? id;
+  final String? name;
+  final String? contact_number;
+  final String? address;
+  final String? location;
+  final LocationCoordinate? location_coordinate;
+  final int? company_profile;
 
   CustomerModel(
       {required this.id,

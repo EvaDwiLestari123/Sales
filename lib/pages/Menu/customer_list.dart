@@ -32,10 +32,10 @@ class CustomerListPage extends StatelessWidget {
               itemCount: customers.length,
               itemBuilder: (context, index) {
                 return ListTile(
-                  title: Text(customers[index].name),
-                  subtitle: Text(customers[index].id),
+                  title: Text(customers[index].name.toString()),
+                  subtitle: Text(customers[index].id.toString()),
                   trailing: Text(
-                      'Contact Number: ${customers[index].contact_number}'),
+                      'Contact Number: ${customers[index].contact_number.toString()}'),
                 );
               },
             );
