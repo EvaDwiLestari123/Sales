@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sales/pages/Login/login.dart';
+import 'package:sales/pages/Menu/add_customer.dart';
 import 'package:sales/pages/Menu/add_purchase.dart';
 import 'package:sales/pages/Menu/customer_list.dart';
 import 'package:sales/theme.dart';
@@ -110,7 +111,14 @@ class _HomePageState extends State<HomePage> {
                     }),
 
                     OutlinedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  AddCustomer(token: widget.token)),
+                        );
+                      },
                       style: OutlinedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
